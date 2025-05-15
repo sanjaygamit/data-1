@@ -1,5 +1,5 @@
-import pandas as pd
-import json
+# import pandas as pd
+# import json
 
 # file_path = 'data/retail_db/schemas.json'
 # schemas = json.load(open(file_path, 'r'))
@@ -61,7 +61,9 @@ import json
 # orders.to_json('data/retail_db/orders_json/part-00000.json', orient='records', lines=True)
 
 import glob
-print(glob.glob('data/retail_db/**', recursive=True))
+file_path = glob.glob('data/retail_db/**', recursive=True)
+for f in file_path:
+    print(f)
 
 
 
