@@ -61,8 +61,7 @@ import json
 # orders.to_json('data/retail_db/orders_json/part-00000.json', orient='records', lines=True)
 
 import glob
-file_path = glob.glob('data/retail_db/**', recursive=True)
-print(file_path)
+print(glob.glob('data/retail_db/**', recursive=True))
 
 
 
